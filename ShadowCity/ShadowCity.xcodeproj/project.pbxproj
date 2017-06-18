@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BF1965C737D0A52D6AA36D2 /* libPods-ShadowCity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */; };
+		9E1AD0119F747E1D71E22D42 /* Pods_ShadowCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */; };
 		CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */; };
 		CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF121EB6678B00DCA6E1 /* ViewController.swift */; };
 		CB60DF161EB6678B00DCA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF141EB6678B00DCA6E1 /* Main.storyboard */; };
@@ -16,6 +16,7 @@
 		CB60DF261EB6678B00DCA6E1 /* ShadowCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF251EB6678B00DCA6E1 /* ShadowCityTests.swift */; };
 		CB60DF311EB6678B00DCA6E1 /* ShadowCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */; };
 		CB60DF3F1EB66B0F00DCA6E1 /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */; };
+		CBD726841EF73586004F310F /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD726831EF73586004F310F /* UserAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.debug.xcconfig"; sourceTree = "<group>"; };
-		341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShadowCity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB60DF121EB6678B00DCA6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCityUITests.swift; sourceTree = "<group>"; };
 		CB60DF321EB6678B00DCA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
+		CBD726831EF73586004F310F /* UserAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		F9F8433E8E0AF7560BF93B65 /* Pods-ShadowCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF1965C737D0A52D6AA36D2 /* libPods-ShadowCity.a in Frameworks */,
+				9E1AD0119F747E1D71E22D42 /* Pods_ShadowCity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +95,7 @@
 		C56C989702732E5802B31293 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */,
+				7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +132,7 @@
 				CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */,
 				CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */,
 				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
+				CBD726831EF73586004F310F /* UserAuth.swift */,
 			);
 			path = ShadowCity;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD726841EF73586004F310F /* UserAuth.swift in Sources */,
 				CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */,
 				CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */,
 			);

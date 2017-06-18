@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyAW-1uN9-jxoiW0v2bP14KC5guXZea7Q3o")
+        
+        if UserAuth.currentToken() == nil {
+            UserAuth.token(user: "test", pass: "test", resultToken: { (_) in
+                //whatever
+            })
+        }
+        
         return true
     }
 
