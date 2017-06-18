@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BF1965C737D0A52D6AA36D2 /* libPods-ShadowCity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */; };
+		CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */; };
+		CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF121EB6678B00DCA6E1 /* ViewController.swift */; };
+		CB60DF161EB6678B00DCA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF141EB6678B00DCA6E1 /* Main.storyboard */; };
+		CB60DF181EB6678B00DCA6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */; };
+		CB60DF1B1EB6678B00DCA6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */; };
+		CB60DF261EB6678B00DCA6E1 /* ShadowCityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF251EB6678B00DCA6E1 /* ShadowCityTests.swift */; };
+		CB60DF311EB6678B00DCA6E1 /* ShadowCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */; };
+		CB60DF3F1EB66B0F00DCA6E1 /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB60DF221EB6678B00DCA6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB60DF051EB6678B00DCA6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB60DF0C1EB6678B00DCA6E1;
+			remoteInfo = ShadowCity;
+		};
+		CB60DF2D1EB6678B00DCA6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB60DF051EB6678B00DCA6E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB60DF0C1EB6678B00DCA6E1;
+			remoteInfo = ShadowCity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.debug.xcconfig"; sourceTree = "<group>"; };
+		341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShadowCity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB60DF121EB6678B00DCA6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB60DF151EB6678B00DCA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB60DF1A1EB6678B00DCA6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB60DF1C1EB6678B00DCA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB60DF211EB6678B00DCA6E1 /* ShadowCityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShadowCityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB60DF251EB6678B00DCA6E1 /* ShadowCityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCityTests.swift; sourceTree = "<group>"; };
+		CB60DF271EB6678B00DCA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB60DF2C1EB6678B00DCA6E1 /* ShadowCityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShadowCityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowCityUITests.swift; sourceTree = "<group>"; };
+		CB60DF321EB6678B00DCA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
+		F9F8433E8E0AF7560BF93B65 /* Pods-ShadowCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB60DF0A1EB6678B00DCA6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF1965C737D0A52D6AA36D2 /* libPods-ShadowCity.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF1E1EB6678B00DCA6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF291EB6678B00DCA6E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AED43C93A02575D418846835 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */,
+				F9F8433E8E0AF7560BF93B65 /* Pods-ShadowCity.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C56C989702732E5802B31293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341AE72ECA873F695750FAC3 /* libPods-ShadowCity.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB60DF041EB6678B00DCA6E1 = {
+			isa = PBXGroup;
+			children = (
+				CB60DF0F1EB6678B00DCA6E1 /* ShadowCity */,
+				CB60DF241EB6678B00DCA6E1 /* ShadowCityTests */,
+				CB60DF2F1EB6678B00DCA6E1 /* ShadowCityUITests */,
+				CB60DF0E1EB6678B00DCA6E1 /* Products */,
+				AED43C93A02575D418846835 /* Pods */,
+				C56C989702732E5802B31293 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB60DF0E1EB6678B00DCA6E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */,
+				CB60DF211EB6678B00DCA6E1 /* ShadowCityTests.xctest */,
+				CB60DF2C1EB6678B00DCA6E1 /* ShadowCityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB60DF0F1EB6678B00DCA6E1 /* ShadowCity */ = {
+			isa = PBXGroup;
+			children = (
+				CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */,
+				CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */,
+				CB60DF121EB6678B00DCA6E1 /* ViewController.swift */,
+				CB60DF141EB6678B00DCA6E1 /* Main.storyboard */,
+				CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */,
+				CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */,
+				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
+			);
+			path = ShadowCity;
+			sourceTree = "<group>";
+		};
+		CB60DF241EB6678B00DCA6E1 /* ShadowCityTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB60DF251EB6678B00DCA6E1 /* ShadowCityTests.swift */,
+				CB60DF271EB6678B00DCA6E1 /* Info.plist */,
+			);
+			path = ShadowCityTests;
+			sourceTree = "<group>";
+		};
+		CB60DF2F1EB6678B00DCA6E1 /* ShadowCityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */,
+				CB60DF321EB6678B00DCA6E1 /* Info.plist */,
+			);
+			path = ShadowCityUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB60DF0C1EB6678B00DCA6E1 /* ShadowCity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB60DF351EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCity" */;
+			buildPhases = (
+				9C63D17DB0DD582D6BE63C15 /* [CP] Check Pods Manifest.lock */,
+				CB60DF091EB6678B00DCA6E1 /* Sources */,
+				CB60DF0A1EB6678B00DCA6E1 /* Frameworks */,
+				CB60DF0B1EB6678B00DCA6E1 /* Resources */,
+				07FC1E77A986B7E364F7A717 /* [CP] Embed Pods Frameworks */,
+				85D93FD8F99B16932CEDBB7F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShadowCity;
+			productName = ShadowCity;
+			productReference = CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB60DF201EB6678B00DCA6E1 /* ShadowCityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB60DF381EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCityTests" */;
+			buildPhases = (
+				CB60DF1D1EB6678B00DCA6E1 /* Sources */,
+				CB60DF1E1EB6678B00DCA6E1 /* Frameworks */,
+				CB60DF1F1EB6678B00DCA6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB60DF231EB6678B00DCA6E1 /* PBXTargetDependency */,
+			);
+			name = ShadowCityTests;
+			productName = ShadowCityTests;
+			productReference = CB60DF211EB6678B00DCA6E1 /* ShadowCityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB60DF2B1EB6678B00DCA6E1 /* ShadowCityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB60DF3B1EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCityUITests" */;
+			buildPhases = (
+				CB60DF281EB6678B00DCA6E1 /* Sources */,
+				CB60DF291EB6678B00DCA6E1 /* Frameworks */,
+				CB60DF2A1EB6678B00DCA6E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB60DF2E1EB6678B00DCA6E1 /* PBXTargetDependency */,
+			);
+			name = ShadowCityUITests;
+			productName = ShadowCityUITests;
+			productReference = CB60DF2C1EB6678B00DCA6E1 /* ShadowCityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB60DF051EB6678B00DCA6E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Redshirt;
+				TargetAttributes = {
+					CB60DF0C1EB6678B00DCA6E1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PS4M93LHR7;
+						ProvisioningStyle = Automatic;
+					};
+					CB60DF201EB6678B00DCA6E1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PS4M93LHR7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB60DF0C1EB6678B00DCA6E1;
+					};
+					CB60DF2B1EB6678B00DCA6E1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = PS4M93LHR7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB60DF0C1EB6678B00DCA6E1;
+					};
+				};
+			};
+			buildConfigurationList = CB60DF081EB6678B00DCA6E1 /* Build configuration list for PBXProject "ShadowCity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB60DF041EB6678B00DCA6E1;
+			productRefGroup = CB60DF0E1EB6678B00DCA6E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB60DF0C1EB6678B00DCA6E1 /* ShadowCity */,
+				CB60DF201EB6678B00DCA6E1 /* ShadowCityTests */,
+				CB60DF2B1EB6678B00DCA6E1 /* ShadowCityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB60DF0B1EB6678B00DCA6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60DF3F1EB66B0F00DCA6E1 /* mapStyle.json in Resources */,
+				CB60DF1B1EB6678B00DCA6E1 /* LaunchScreen.storyboard in Resources */,
+				CB60DF181EB6678B00DCA6E1 /* Assets.xcassets in Resources */,
+				CB60DF161EB6678B00DCA6E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF1F1EB6678B00DCA6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF2A1EB6678B00DCA6E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07FC1E77A986B7E364F7A717 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D93FD8F99B16932CEDBB7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C63D17DB0DD582D6BE63C15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB60DF091EB6678B00DCA6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */,
+				CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF1D1EB6678B00DCA6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60DF261EB6678B00DCA6E1 /* ShadowCityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB60DF281EB6678B00DCA6E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB60DF311EB6678B00DCA6E1 /* ShadowCityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB60DF231EB6678B00DCA6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB60DF0C1EB6678B00DCA6E1 /* ShadowCity */;
+			targetProxy = CB60DF221EB6678B00DCA6E1 /* PBXContainerItemProxy */;
+		};
+		CB60DF2E1EB6678B00DCA6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB60DF0C1EB6678B00DCA6E1 /* ShadowCity */;
+			targetProxy = CB60DF2D1EB6678B00DCA6E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB60DF141EB6678B00DCA6E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB60DF151EB6678B00DCA6E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB60DF1A1EB6678B00DCA6E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB60DF331EB6678B00DCA6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB60DF341EB6678B00DCA6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB60DF361EB6678B00DCA6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CB60DF371EB6678B00DCA6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F8433E8E0AF7560BF93B65 /* Pods-ShadowCity.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CB60DF391EB6678B00DCA6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowCity.app/ShadowCity";
+			};
+			name = Debug;
+		};
+		CB60DF3A1EB6678B00DCA6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShadowCity.app/ShadowCity";
+			};
+			name = Release;
+		};
+		CB60DF3C1EB6678B00DCA6E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShadowCity;
+			};
+			name = Debug;
+		};
+		CB60DF3D1EB6678B00DCA6E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PS4M93LHR7;
+				INFOPLIST_FILE = ShadowCityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshirt.ShadowCityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShadowCity;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB60DF081EB6678B00DCA6E1 /* Build configuration list for PBXProject "ShadowCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60DF331EB6678B00DCA6E1 /* Debug */,
+				CB60DF341EB6678B00DCA6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB60DF351EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60DF361EB6678B00DCA6E1 /* Debug */,
+				CB60DF371EB6678B00DCA6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB60DF381EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60DF391EB6678B00DCA6E1 /* Debug */,
+				CB60DF3A1EB6678B00DCA6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB60DF3B1EB6678B00DCA6E1 /* Build configuration list for PBXNativeTarget "ShadowCityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB60DF3C1EB6678B00DCA6E1 /* Debug */,
+				CB60DF3D1EB6678B00DCA6E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB60DF051EB6678B00DCA6E1 /* Project object */;
+}
