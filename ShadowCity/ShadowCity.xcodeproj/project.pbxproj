@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9E1AD0119F747E1D71E22D42 /* Pods_ShadowCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */; };
+		CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A913E1F3922D400DC44AF /* LoginViewController.swift */; };
+		CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91401F392AE700DC44AF /* MainViewController.swift */; };
+		CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */; };
 		CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */; };
 		CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF121EB6678B00DCA6E1 /* ViewController.swift */; };
 		CB60DF161EB6678B00DCA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF141EB6678B00DCA6E1 /* Main.storyboard */; };
@@ -17,6 +20,8 @@
 		CB60DF311EB6678B00DCA6E1 /* ShadowCityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF301EB6678B00DCA6E1 /* ShadowCityUITests.swift */; };
 		CB60DF3F1EB66B0F00DCA6E1 /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */; };
 		CBD726841EF73586004F310F /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD726831EF73586004F310F /* UserAuth.swift */; };
+		CBD726871EF740FB004F310F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD726861EF740FB004F310F /* GameState.swift */; };
+		CBD726891EF7410F004F310F /* NetworkingEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD726881EF7410F004F310F /* NetworkingEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,9 @@
 /* Begin PBXFileReference section */
 		1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.debug.xcconfig"; sourceTree = "<group>"; };
 		7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2A913E1F3922D400DC44AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CB2A91401F392AE700DC44AF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB60DF121EB6678B00DCA6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +62,8 @@
 		CB60DF321EB6678B00DCA6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		CBD726831EF73586004F310F /* UserAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		CBD726861EF740FB004F310F /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		CBD726881EF7410F004F310F /* NetworkingEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingEnums.swift; sourceTree = "<group>"; };
 		F9F8433E8E0AF7560BF93B65 /* Pods-ShadowCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,13 +136,16 @@
 			isa = PBXGroup;
 			children = (
 				CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */,
+				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
 				CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */,
+				CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */,
+				CB2A913E1F3922D400DC44AF /* LoginViewController.swift */,
+				CB2A91401F392AE700DC44AF /* MainViewController.swift */,
 				CB60DF121EB6678B00DCA6E1 /* ViewController.swift */,
-				CB60DF141EB6678B00DCA6E1 /* Main.storyboard */,
 				CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */,
 				CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */,
-				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
-				CBD726831EF73586004F310F /* UserAuth.swift */,
+				CB60DF141EB6678B00DCA6E1 /* Main.storyboard */,
+				CBD726851EF740D7004F310F /* Networking */,
 			);
 			path = ShadowCity;
 			sourceTree = "<group>";
@@ -153,6 +166,16 @@
 				CB60DF321EB6678B00DCA6E1 /* Info.plist */,
 			);
 			path = ShadowCityUITests;
+			sourceTree = "<group>";
+		};
+		CBD726851EF740D7004F310F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CBD726831EF73586004F310F /* UserAuth.swift */,
+				CBD726861EF740FB004F310F /* GameState.swift */,
+				CBD726881EF7410F004F310F /* NetworkingEnums.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */,
+				CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */,
 				CBD726841EF73586004F310F /* UserAuth.swift in Sources */,
+				CBD726871EF740FB004F310F /* GameState.swift in Sources */,
+				CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */,
+				CBD726891EF7410F004F310F /* NetworkingEnums.swift in Sources */,
 				CB60DF131EB6678B00DCA6E1 /* ViewController.swift in Sources */,
 				CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */,
 			);
