@@ -86,6 +86,7 @@ public struct UserAuth {
     
     public static func logOut() {
         UserDefaults.standard.removeObject(forKey: NetworkKeys.token.rawValue)
-        token = ""
+        UserDefaults.standard.synchronize()
+        token = nil
     }
 }

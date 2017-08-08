@@ -12,9 +12,15 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         if UserAuth.currentToken() != nil {
-            performSegue(withIdentifier: "play", sender: nil)
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "play", sender: nil)
+            }
         } else {
             
         }
@@ -23,5 +29,9 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 }

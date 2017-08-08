@@ -34,12 +34,7 @@ class LoginViewController: UIViewController {
         
         UserAuth.token(user: user, pass: pass, aHost: UserAuth.debugHost) { (success, message) in
             if success {
-                //do some logged in shit.
-                let alert = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-                    self.dismiss(animated: true, completion: nil)
-                }))
-                self.present(alert, animated: true, completion: nil)
+                self.dismiss(animated: false, completion: nil)
             } else {
                 let alert = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
                 self.present(alert, animated: true, completion: nil)
