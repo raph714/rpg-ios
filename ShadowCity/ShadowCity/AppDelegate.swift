@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyAW-1uN9-jxoiW0v2bP14KC5guXZea7Q3o")
         UIApplication.shared.statusBarStyle = .lightContent
+        CharacterCreation.rollStats { (vals) in
+            debugPrint(vals)
+        }
         return true
     }
 

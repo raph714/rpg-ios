@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9E1AD0119F747E1D71E22D42 /* Pods_ShadowCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */; };
+		CB0F90231F3CFDE500C142E9 /* SelectRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */; };
+		CB0F90251F3D050400C142E9 /* CharacterCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90241F3D050400C142E9 /* CharacterCreation.swift */; };
 		CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A913E1F3922D400DC44AF /* LoginViewController.swift */; };
 		CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91401F392AE700DC44AF /* MainViewController.swift */; };
 		CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */; };
 		CB2A91451F3A88AA00DC44AF /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91441F3A88AA00DC44AF /* GameController.swift */; };
+		CB2A91471F3A917200DC44AF /* CreateCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91461F3A917200DC44AF /* CreateCharacterViewController.swift */; };
 		CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */; };
 		CB60DF131EB6678B00DCA6E1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB60DF121EB6678B00DCA6E1 /* GameViewController.swift */; };
 		CB60DF161EB6678B00DCA6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB60DF141EB6678B00DCA6E1 /* Main.storyboard */; };
@@ -45,10 +48,13 @@
 /* Begin PBXFileReference section */
 		1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.debug.xcconfig"; sourceTree = "<group>"; };
 		7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRaceViewController.swift; sourceTree = "<group>"; };
+		CB0F90241F3D050400C142E9 /* CharacterCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreation.swift; sourceTree = "<group>"; };
 		CB2A913E1F3922D400DC44AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB2A91401F392AE700DC44AF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		CB2A91441F3A88AA00DC44AF /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		CB2A91461F3A917200DC44AF /* CreateCharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCharacterViewController.swift; sourceTree = "<group>"; };
 		CB60DF0D1EB6678B00DCA6E1 /* ShadowCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB60DF121EB6678B00DCA6E1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -141,14 +147,16 @@
 				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
 				CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */,
 				CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */,
+				CB2A91461F3A917200DC44AF /* CreateCharacterViewController.swift */,
+				CB2A91441F3A88AA00DC44AF /* GameController.swift */,
 				CB60DF121EB6678B00DCA6E1 /* GameViewController.swift */,
 				CB2A913E1F3922D400DC44AF /* LoginViewController.swift */,
 				CB2A91401F392AE700DC44AF /* MainViewController.swift */,
+				CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */,
 				CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */,
 				CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */,
 				CB60DF141EB6678B00DCA6E1 /* Main.storyboard */,
 				CBD726851EF740D7004F310F /* Networking */,
-				CB2A91441F3A88AA00DC44AF /* GameController.swift */,
 			);
 			path = ShadowCity;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 				CBD726831EF73586004F310F /* UserAuth.swift */,
 				CBD726861EF740FB004F310F /* GameState.swift */,
 				CBD726881EF7410F004F310F /* NetworkingEnums.swift */,
+				CB0F90241F3D050400C142E9 /* CharacterCreation.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -371,11 +380,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */,
+				CB0F90231F3CFDE500C142E9 /* SelectRaceViewController.swift in Sources */,
 				CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */,
 				CBD726841EF73586004F310F /* UserAuth.swift in Sources */,
+				CB0F90251F3D050400C142E9 /* CharacterCreation.swift in Sources */,
 				CBD726871EF740FB004F310F /* GameState.swift in Sources */,
 				CB2A91451F3A88AA00DC44AF /* GameController.swift in Sources */,
 				CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */,
+				CB2A91471F3A917200DC44AF /* CreateCharacterViewController.swift in Sources */,
 				CBD726891EF7410F004F310F /* NetworkingEnums.swift in Sources */,
 				CB60DF131EB6678B00DCA6E1 /* GameViewController.swift in Sources */,
 				CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */,
