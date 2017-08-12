@@ -10,9 +10,6 @@ import Foundation
 import Alamofire
 
 public struct UserAuth {
-    public static let host = "http://shadowcitygame.com/api/v1/token/"
-    public static let debugHost = "http://127.0.0.1:8000/api/v1/token/"
-    public static let debugUserEndpoint = "http://127.0.0.1:8000/users/"
     public static var token: String?
     
     public static func currentToken() -> String? {
@@ -30,38 +27,28 @@ public struct UserAuth {
         return nil
     }
     
-    public static func createAccount(user: String, pass: String, result: @escaping (Bool, String?) -> Void) {
+    public static func createAccount(user: String, pass: String, result: @escaping (NetworkResponse) -> Void) {
         let params = [NetworkKeys.username.rawValue: user, NetworkKeys.password.rawValue: pass]
         
-        Alamofire.request(UserAuth.debugUserEndpoint, method: .post, parameters: params).validate().responseJSON { response in
+        Alamofire.request(NetworkUrls.url(with: .userCreate), method: .post, parameters: params).validate().responseJSON { response in
             switch response.result {
             case .success:
                 //great, we have success, now make a request to get the token for said account.
-                UserAuth.token(user: user, pass: pass, aHost: UserAuth.debugHost, resultToken: { (success, msg) in
-                    if success, let json = response.result.value as? [String: Any],
-                        let newToken = json[NetworkKeys.token.rawValue] as? String
-                    {
-                        debugPrint("New Token from net")
-                        token = newToken
-                        save(newToken: newToken)
-                        result(true, "Signed in, adventure on.")
-                    } else {
-                        result(false, response.description)
-                    }
+                UserAuth.token(user: user, pass: pass, resultToken: { (tokenResponse) in
+                    result(tokenResponse)
                 })
-                
             case .failure(_):
                 logOut()
-                result(false, response.description)
+                result(NetworkResponse(success: false, message: "Account creation failed."))
             }
         }
     }
     
-    public static func token(user: String, pass: String, aHost: String, resultToken: @escaping (Bool, String?) -> Void) {
+    public static func token(user: String, pass: String, resultToken: @escaping (NetworkResponse) -> Void) {
 
         let params = [NetworkKeys.username.rawValue: user, NetworkKeys.password.rawValue: pass]
 
-        Alamofire.request(aHost, method: .post, parameters: params).validate().responseJSON { response in
+        Alamofire.request(NetworkUrls.url(with: .userToken), method: .post, parameters: params).validate().responseJSON { response in
             switch response.result {
             case .success:
                 if let json = response.result.value as? [String: Any],
@@ -70,11 +57,11 @@ public struct UserAuth {
                     debugPrint("New Token from net")
                     token = newToken
                     save(newToken: newToken)
-                    resultToken(true, "Signed in, adventure on.")
+                    resultToken(NetworkResponse(success: true, message: "Signed in, adventure on."))
                 }
             case .failure(_):
                 logOut()
-                resultToken(false, "Login failed, please try again.")
+                resultToken(NetworkResponse(success: false, message: "Login failed, please try again."))
             }
         }
     }

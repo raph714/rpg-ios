@@ -19,5 +19,31 @@ class CreateCharacterViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        roll()
+    }
+    
+    @IBAction func reRoll() {
+        roll()
+    }
+    
+    func roll() {
+        CharacterCreation.rollStats { (stats) in
+            for (stat, val) in stats {
+                switch stat {
+                case .charisma:
+                    self.charisma.text = "\(val)"
+                case .constitution:
+                    self.constitution.text = "\(val)"
+                case .dexterity:
+                    self.dexterity.text = "\(val)"
+                case .intelligence:
+                    self.intelligence.text = "\(val)"
+                case .strength:
+                    self.strength.text = "\(val)"
+                case .wisdom:
+                    self.wisdom.text = "\(val)"
+                }
+            }
+        }
     }
 }

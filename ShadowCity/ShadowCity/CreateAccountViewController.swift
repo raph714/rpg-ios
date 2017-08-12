@@ -28,16 +28,16 @@ class CreateAccountViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else  {
-            UserAuth.createAccount(user: user, pass: pass) { (success, message) in
-                if success {
+            UserAuth.createAccount(user: user, pass: pass) { (result) in
+                if result.success {
                     //do some logged in shit.
-                    let alert = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Success", message: result.message, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-                        self.dismiss(animated: true, completion: nil)
+                        self.performSegue(withIdentifier: "createCharacter", sender: self)
                     }))
                     self.present(alert, animated: true, completion: nil)
                 } else {
-                    let alert = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Oops", message: result.message, preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 }

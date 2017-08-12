@@ -39,7 +39,7 @@ public struct Stats {
 }
 
 public struct CharacterCreation {
-    static let rollStatsUrl = "http://127.0.0.1:8000/actors/roll_stats/"
+    static var charData = [String: Any]()
     
     public static func getRaceChoices() -> [RaceChoice] {
         var choices = [RaceChoice]()
@@ -48,7 +48,7 @@ public struct CharacterCreation {
     
     public static func rollStats(completion: @escaping ([StatName: Int]) -> Void) {
         var stats = [StatName: Int]()
-        Alamofire.request(CharacterCreation.rollStatsUrl).responseJSON { response in
+        Alamofire.request(NetworkUrls.url(with: .rollStats)).responseJSON { response in
             if let json = response.result.value as? [String: Any] {
                 for (k, v) in json {
                     if let name = StatName.init(rawValue: k),
@@ -56,9 +56,18 @@ public struct CharacterCreation {
                         stats[name] = val
                     }
                 }
+                
+                //make sure we save this round in case the user likes it.
+                update(data: json)
             }
             
             completion(stats)
+        }
+    }
+    
+    public static func update(data: [String: Any]) {
+        for (k, v) in data {
+            charData[k] = v
         }
     }
 }

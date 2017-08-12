@@ -267,6 +267,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <segue destination="yDi-If-XT4" kind="presentation" modalTransitionStyle="crossDissolve" id="mmJ-Hf-XbT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcz-ZE-OGO">
                                         <rect key="frame" x="16" y="384" width="343" height="30"/>
@@ -274,6 +277,9 @@
                                             <constraint firstAttribute="height" constant="30" id="JrX-hX-Vf3"/>
                                         </constraints>
                                         <state key="normal" title="Reroll"/>
+                                        <connections>
+                                            <action selector="reRoll" destination="x1V-hL-vKg" eventType="touchUpInside" id="ETc-y6-z7M"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create character, step 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7T-Fq-8Sj">
                                         <rect key="frame" x="16" y="29" width="343" height="21"/>
@@ -350,30 +356,51 @@
                         <outlet property="intelligence" destination="NfW-Iq-ibz" id="lvb-sv-ehT"/>
                         <outlet property="strength" destination="kB0-dr-Wui" id="4UV-u6-Py9"/>
                         <outlet property="wisdom" destination="leq-XD-t4M" id="Ys9-Uk-kUD"/>
-                        <segue destination="SfO-4F-wjC" kind="presentation" modalTransitionStyle="crossDissolve" id="0CM-bV-Jut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjV-aU-4xx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-687.7061469265368"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7eY-uR-iC2">
+        <!--Simple Table View Controller-->
+        <scene sceneID="3oi-Fh-ps5">
             <objects>
-                <viewController id="SfO-4F-wjC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LdR-06-Vli"/>
-                        <viewControllerLayoutGuide type="bottom" id="SZT-rE-42N"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="g6c-Cr-MaJ">
+                <tableViewController id="yDi-If-XT4" customClass="SimpleTableViewController" customModule="ShadowCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jTt-t7-EeG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JiQ-tr-9dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="yDi-If-XT4" id="7Dz-VE-c2f"/>
+                            <outlet property="delegate" destination="yDi-If-XT4" id="0mC-2X-AZo"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="6xT-IE-eiw" kind="presentation" identifier="chooseClass" modalTransitionStyle="crossDissolve" id="IfO-bJ-z6j"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPM-rh-KII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="-688"/>
+            <point key="canvasLocation" x="1712.8" y="-687.7061469265368"/>
+        </scene>
+        <!--Simple Table View Controller-->
+        <scene sceneID="SIY-0i-Zkx">
+            <objects>
+                <tableViewController id="6xT-IE-eiw" customClass="SimpleTableViewController" customModule="ShadowCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iZ5-hK-aRE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="6xT-IE-eiw" id="uIy-jY-gkd"/>
+                            <outlet property="delegate" destination="6xT-IE-eiw" id="xwD-Xw-NBz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lu4-o9-qUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2527" y="-688"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="gJ7-LE-4KD">
