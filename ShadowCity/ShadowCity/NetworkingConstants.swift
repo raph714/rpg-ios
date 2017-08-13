@@ -30,6 +30,7 @@ public enum Endpoint: String {
     
     case rollStats = "actors/roll_stats/"
     case listRaces = "actors/list_races/"
+    case listClasses = "actors/list_classes/"
     case game = "game/"
 }
 

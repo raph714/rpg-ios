@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9E1AD0119F747E1D71E22D42 /* Pods_ShadowCity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */; };
-		CB0F90231F3CFDE500C142E9 /* SelectRaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */; };
 		CB0F90251F3D050400C142E9 /* CharacterCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90241F3D050400C142E9 /* CharacterCreation.swift */; };
-		CB0F90271F3E3BA400C142E9 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90261F3E3BA400C142E9 /* SimpleTableViewController.swift */; };
+		CB0F90291F3FB5E000C142E9 /* RaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F90281F3FB5E000C142E9 /* RaceTableViewController.swift */; };
+		CB0F902C1F3FB96800C142E9 /* TitleDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F902B1F3FB96800C142E9 /* TitleDetailTableViewCell.swift */; };
+		CB0F902E1F3FFE3200C142E9 /* ClassTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F902D1F3FFE3200C142E9 /* ClassTableViewController.swift */; };
+		CB0F90301F3FFEB100C142E9 /* BaseObjTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0F902F1F3FFEB100C142E9 /* BaseObjTableViewController.swift */; };
 		CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A913E1F3922D400DC44AF /* LoginViewController.swift */; };
 		CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91401F392AE700DC44AF /* MainViewController.swift */; };
 		CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */; };
@@ -49,9 +51,11 @@
 /* Begin PBXFileReference section */
 		1901885E7A8D83C57F95C707 /* Pods-ShadowCity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShadowCity.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ShadowCity/Pods-ShadowCity.debug.xcconfig"; sourceTree = "<group>"; };
 		7707E9884A77B5060A30BB62 /* Pods_ShadowCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShadowCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRaceViewController.swift; sourceTree = "<group>"; };
 		CB0F90241F3D050400C142E9 /* CharacterCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreation.swift; sourceTree = "<group>"; };
-		CB0F90261F3E3BA400C142E9 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		CB0F90281F3FB5E000C142E9 /* RaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceTableViewController.swift; sourceTree = "<group>"; };
+		CB0F902B1F3FB96800C142E9 /* TitleDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CB0F902D1F3FFE3200C142E9 /* ClassTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableViewController.swift; sourceTree = "<group>"; };
+		CB0F902F1F3FFEB100C142E9 /* BaseObjTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseObjTableViewController.swift; sourceTree = "<group>"; };
 		CB2A913E1F3922D400DC44AF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB2A91401F392AE700DC44AF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB0F902A1F3FB5E400C142E9 /* Char Creation UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */,
+				CB2A91461F3A917200DC44AF /* CreateCharacterViewController.swift */,
+				CB0F90281F3FB5E000C142E9 /* RaceTableViewController.swift */,
+				CB0F902B1F3FB96800C142E9 /* TitleDetailTableViewCell.swift */,
+				CB0F902D1F3FFE3200C142E9 /* ClassTableViewController.swift */,
+				CB0F902F1F3FFEB100C142E9 /* BaseObjTableViewController.swift */,
+			);
+			name = "Char Creation UI";
+			sourceTree = "<group>";
+		};
 		CB60DF041EB6678B00DCA6E1 = {
 			isa = PBXGroup;
 			children = (
@@ -145,17 +162,14 @@
 		CB60DF0F1EB6678B00DCA6E1 /* ShadowCity */ = {
 			isa = PBXGroup;
 			children = (
+				CB0F902A1F3FB5E400C142E9 /* Char Creation UI */,
 				CB60DF3E1EB66B0F00DCA6E1 /* mapStyle.json */,
 				CB60DF1C1EB6678B00DCA6E1 /* Info.plist */,
 				CB60DF101EB6678B00DCA6E1 /* AppDelegate.swift */,
-				CB2A91421F39301200DC44AF /* CreateAccountViewController.swift */,
-				CB2A91461F3A917200DC44AF /* CreateCharacterViewController.swift */,
 				CB2A91441F3A88AA00DC44AF /* GameController.swift */,
 				CB60DF121EB6678B00DCA6E1 /* GameViewController.swift */,
 				CB2A913E1F3922D400DC44AF /* LoginViewController.swift */,
 				CB2A91401F392AE700DC44AF /* MainViewController.swift */,
-				CB0F90221F3CFDE500C142E9 /* SelectRaceViewController.swift */,
-				CB0F90261F3E3BA400C142E9 /* SimpleTableViewController.swift */,
 				CB60DF171EB6678B00DCA6E1 /* Assets.xcassets */,
 				CB60DF191EB6678B00DCA6E1 /* LaunchScreen.storyboard */,
 				CB60DF141EB6678B00DCA6E1 /* Main.storyboard */,
@@ -383,18 +397,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2A91411F392AE700DC44AF /* MainViewController.swift in Sources */,
-				CB0F90231F3CFDE500C142E9 /* SelectRaceViewController.swift in Sources */,
 				CB2A913F1F3922D400DC44AF /* LoginViewController.swift in Sources */,
+				CB0F902E1F3FFE3200C142E9 /* ClassTableViewController.swift in Sources */,
 				CBD726841EF73586004F310F /* UserAuth.swift in Sources */,
 				CB0F90251F3D050400C142E9 /* CharacterCreation.swift in Sources */,
+				CB0F90291F3FB5E000C142E9 /* RaceTableViewController.swift in Sources */,
 				CBD726871EF740FB004F310F /* GameState.swift in Sources */,
-				CB0F90271F3E3BA400C142E9 /* SimpleTableViewController.swift in Sources */,
 				CB2A91451F3A88AA00DC44AF /* GameController.swift in Sources */,
 				CB2A91431F39301200DC44AF /* CreateAccountViewController.swift in Sources */,
 				CB2A91471F3A917200DC44AF /* CreateCharacterViewController.swift in Sources */,
+				CB0F902C1F3FB96800C142E9 /* TitleDetailTableViewCell.swift in Sources */,
 				CBD726891EF7410F004F310F /* NetworkingConstants.swift in Sources */,
 				CB60DF131EB6678B00DCA6E1 /* GameViewController.swift in Sources */,
 				CB60DF111EB6678B00DCA6E1 /* AppDelegate.swift in Sources */,
+				CB0F90301F3FFEB100C142E9 /* BaseObjTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

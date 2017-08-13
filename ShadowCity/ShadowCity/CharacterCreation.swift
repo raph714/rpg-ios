@@ -38,13 +38,19 @@ public struct Stats {
     }
 }
 
+public enum CreationStep: Int {
+    case selectRace
+    case selectClass
+}
+
+public struct BaseObject {
+    let name: String
+    let id: Int
+    let desctription: String
+}
+
 public struct CharacterCreation {
     static var charData = [String: Any]()
-    
-    public static func getRaceChoices() -> [RaceChoice] {
-        var choices = [RaceChoice]()
-        return choices
-    }
     
     public static func rollStats(completion: @escaping ([StatName: Int]) -> Void) {
         var stats = [StatName: Int]()
@@ -69,5 +75,33 @@ public struct CharacterCreation {
         for (k, v) in data {
             charData[k] = v
         }
+    }
+    
+    public static func dataFor(step: CreationStep, completion: @escaping ([BaseObject]) -> Void) {
+        var url = NetworkUrls.url(with: .listRaces)
+        
+        switch step {
+        case .selectClass:
+            url = NetworkUrls.url(with: .listClasses)
+        default:
+            break
+        }
+        
+        Alamofire.request(url).responseJSON { response in
+            var res = [BaseObject]()
+            
+            if let json = response.result.value as? [[String: Any]] {
+                for item in json {
+                    let obj = BaseObject(name: item["name"] as? String ?? "", id: item["id"] as? Int ?? 0, desctription: item["description"] as? String ?? "")
+                    res.append(obj)
+                }
+            }
+            
+            completion(res)
+        }
+    }
+    
+    public static func completeCharCreation(completion: @escaping (NetworkResponse) -> Void) {
+        
     }
 }
