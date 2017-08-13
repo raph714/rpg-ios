@@ -10,12 +10,8 @@ import Foundation
 
 public struct NetworkResponse {
     public let success: Bool
-    public let message: String
-    
-    public init(success: Bool, message: String) {
-        self.success = success
-        self.message = message
-    }
+    public let message: String?
+    public let json: [String: Any]?
 }
 
 public enum NetworkKeys: String {
@@ -31,6 +27,7 @@ public enum Endpoint: String {
     case rollStats = "actors/roll_stats/"
     case listRaces = "actors/list_races/"
     case listClasses = "actors/list_classes/"
+    case createCharacter = "actors/create_actor/"
     case game = "game/"
 }
 

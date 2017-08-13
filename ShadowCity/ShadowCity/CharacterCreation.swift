@@ -102,6 +102,8 @@ public struct CharacterCreation {
     }
     
     public static func completeCharCreation(completion: @escaping (NetworkResponse) -> Void) {
-        
+        UserAuth.makeRequest(url: NetworkUrls.url(with: .createCharacter), method: .post, params: charData) { (response) in
+            debugPrint(response)
+        }
     }
 }

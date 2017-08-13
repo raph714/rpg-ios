@@ -39,7 +39,7 @@ public struct UserAuth {
                 })
             case .failure(_):
                 logOut()
-                result(NetworkResponse(success: false, message: "Account creation failed."))
+                result(NetworkResponse(success: false, message: "Account creation failed.", json: nil))
             }
         }
     }
@@ -57,12 +57,22 @@ public struct UserAuth {
                     debugPrint("New Token from net")
                     token = newToken
                     save(newToken: newToken)
-                    resultToken(NetworkResponse(success: true, message: "Signed in, adventure on."))
+                    resultToken(NetworkResponse(success: true, message: "Signed in, adventure on.", json: nil))
                 }
             case .failure(_):
                 logOut()
-                resultToken(NetworkResponse(success: false, message: "Login failed, please try again."))
+                resultToken(NetworkResponse(success: false, message: "Login failed, please try again.", json: nil))
             }
+        }
+    }
+    
+    public static func makeRequest(url: String, method: HTTPMethod, params: [String: Any], completion: @escaping (DataResponse<Any>) -> Void) {
+        guard let t = token else { return }
+        
+        let authHeader = ["Authorization": "Token " + t]
+        
+        Alamofire.request(url, method: method, parameters: params, headers: authHeader).validate().responseJSON { response in
+            completion(response)
         }
     }
     
